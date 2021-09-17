@@ -1,0 +1,28 @@
+.provided{
+    height:100px;
+    margin-top: auto;
+}
+.provided p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.provided .contact{
+    margin-top:10px;
+    color:#333;
+}
+
+.provided-logo{
+    display: flex;
+    align-items: center;
+}
+.provided-logo img{
+    margin-left:10px;
+    display: block;;
+    width:300px;
+}
+.provided-logo .dfinity{
+    margin-left:6px;
+    font-size: .875em;
+    letter-spacing: 2px;
+}
