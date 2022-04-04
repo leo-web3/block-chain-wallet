@@ -7,8 +7,8 @@ export default () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path={process.env.PUBLIC_URL + '/'} component={Batch} />
-        <Route exact path={process.env.PUBLIC_URL + '/consecutive'} component={Consecutive} />
+        <Route exact path="/" component={Batch} />
+        <Route exact path="/consecutive" component={Consecutive} />
       </Switch>
     </BrowserRouter>
   )
