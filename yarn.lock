@@ -15405,10 +15405,10 @@ react-confetti@^6.0.0:
   dependencies:
     tween-functions "^1.2.0"
 
-react-copy-to-clipboard@^5.0.3:
+react-copy-to-clipboard@^5.0.4:
   version "5.0.4"
-  resolved "https://registry.nlark.com/react-copy-to-clipboard/download/react-copy-to-clipboard-5.0.4.tgz?cache=0&sync_timestamp=1629206919889&other_urls=https%3A%2F%2Fregistry.nlark.com%2Freact-copy-to-clipboard%2Fdownload%2Freact-copy-to-clipboard-5.0.4.tgz#42ec519b03eb9413b118af92d1780c403a5f19bf"
-  integrity sha1-QuxRmwPrlBOxGK+S0XgMQDpfGb8=
+  resolved "https://registry.npmmirror.com/react-copy-to-clipboard/-/react-copy-to-clipboard-5.0.4.tgz#42ec519b03eb9413b118af92d1780c403a5f19bf"
+  integrity sha512-IeVAiNVKjSPeGax/Gmkqfa/+PuMTBhutEvFUaMQLwE2tS0EXrAdgOpWDX26bWTXF3HrioorR7lr08NqeYUWQCQ==
   dependencies:
     copy-to-clipboard "^3"
     prop-types "^15.5.8"

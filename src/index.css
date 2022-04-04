@@ -180,3 +180,20 @@ ul,li,dl,dt,ol{
 .Identity{
   margin: 20px 0;
 }
+dl{
+  max-height:500px;
+  overflow: auto;
+}
+dt{
+  
+}
+dd{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+dd button{
+  /* height: 30px; */
+  padding:4px 20px;
+}

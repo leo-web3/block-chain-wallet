@@ -67,8 +67,8 @@ export default function Index() {
                                 <p className="rewardAddress">
                                     <label>{item.name}: </label>
                                     {item.address}
-                                    <a href="javascript:;" className="copyBtn" data-clipboard-text={item.address}>Copy</a>
-                                    <a href="javascript:;" onClick={()=>{
+                                    <a className="copyBtn" data-clipboard-text={item.address}>Copy</a>
+                                    <a onClick={()=>{
                                         let _rewardList = [...rewardList];
                                         _rewardList[index].qrCode = !_rewardList[index].qrCode;
                                         setRewardList(_rewardList)
