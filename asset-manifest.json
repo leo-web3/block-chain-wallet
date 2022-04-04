@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/block-chain-wallet/static/css/main.079e4c12.chunk.css",
-    "main.js": "/block-chain-wallet/static/js/main.bd4a5a95.chunk.js",
-    "main.js.map": "/block-chain-wallet/static/js/main.bd4a5a95.chunk.js.map",
+    "main.js": "/block-chain-wallet/static/js/main.0c2e589f.chunk.js",
+    "main.js.map": "/block-chain-wallet/static/js/main.0c2e589f.chunk.js.map",
     "runtime-main.js": "/block-chain-wallet/static/js/runtime-main.8eae1721.js",
     "runtime-main.js.map": "/block-chain-wallet/static/js/runtime-main.8eae1721.js.map",
     "static/js/2.c653fc41.chunk.js": "/block-chain-wallet/static/js/2.c653fc41.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8eae1721.js",
     "static/js/2.c653fc41.chunk.js",
     "static/css/main.079e4c12.chunk.css",
-    "static/js/main.bd4a5a95.chunk.js"
+    "static/js/main.0c2e589f.chunk.js"
   ]
 }
