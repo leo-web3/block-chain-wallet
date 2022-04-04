@@ -84,7 +84,7 @@ export default ()=> {
                 ))
             }
             {
-                !accounts.length && (<dd>not data</dd>)
+                !accounts.length && (<dd>Not Data</dd>)
             }
         </dl>
         <Reward />
