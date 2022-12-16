@@ -4,7 +4,7 @@ import Batch from "./view/batch";
 export default () => {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
           <Route path="/" component={Batch}></Route>
       </Switch>
