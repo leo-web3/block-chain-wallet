@@ -1,10 +1,11 @@
 import React from 'react';
 import QRCode from 'qrcode.react';
 import ClipboardJS from 'clipboard'
-import './index.css'
+import './index.scss'
+import MessageAlert from "../MessageAlert";
 let showTimes = null;
 export default function Index() {
-    const [openMessageAlert, setOpenMessageAlert] = React.useState(false);
+    const [message, setMessage] = React.useState(false);
     const [rewardList, setRewardList] = React.useState([
         {
             name: 'ETH',
@@ -21,24 +22,17 @@ export default function Index() {
             address: 'TYg4cWXQGP7RnnizSZEXtqmNnsydi3BxbP',
             qrCode: false
         },
-        {
-            name: 'EOS',
-            address: 'mnemonic1234',
-            qrCode: false
-        }
+        // {
+        //     name: 'EOS',
+        //     address: 'mnemonic1234',
+        //     qrCode: false
+        // }
     ])
     const handleClick = () => {
-        setOpenMessageAlert(true);
-        clearTimeout(showTimes)
+        setMessage("复制成功");
         showTimes = setTimeout(()=>{
-            setOpenMessageAlert(false);
+            setMessage(undefined);
         },1000)
-    };
-    const handleClose = (event, reason) => {
-        if (reason === 'clickaway') {
-            return;
-        }
-        setOpenMessageAlert(false);
     };
     const clipboard = new ClipboardJS('.copyBtn');
     clipboard.on('success', function(e) {
@@ -48,17 +42,9 @@ export default function Index() {
     });
     return (
         <div className="Reward">
-            {
-                openMessageAlert && (
-                    <div className="Reward-Snackbar">
-                        <span onClose={handleClose}>
-                            Copy success
-                        </span>
-                    </div>
-                )
-            }
 
-            <h3>Donate & Support</h3>
+            <MessageAlert message={message} handleClose={()=>setMessage("")}/>
+            <h3>捐赠和支持</h3>
             <ul aria-label="main mailbox folders">
                 {
                     rewardList.map((item, index)=>{
@@ -68,7 +54,7 @@ export default function Index() {
                                     <label>{item.name}: </label>
                                     {item.address}
                                     <a className="copyBtn" data-clipboard-text={item.address}>Copy</a>
-                                    <a onClick={()=>{
+                                    <a className="qrcodeBtn" onClick={()=>{
                                         let _rewardList = [...rewardList];
                                         _rewardList[index].qrCode = !_rewardList[index].qrCode;
                                         setRewardList(_rewardList)

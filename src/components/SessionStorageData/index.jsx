@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import './index.css'
+import './index.scss'
 export default function SessionStorageData({data, download,defaultData}){
     const [defaultHistory, setDefaultHistory] = useState(defaultData)
     const [history, setHistory] = useState([])
@@ -8,7 +8,7 @@ export default function SessionStorageData({data, download,defaultData}){
             let arr = []
             for (let i = 0; i<4;i++){
                 arr.push(
-                    <tr key={Date.now()}>
+                    <tr key={i}>
                         <td align="left">&nbsp;</td>
                         <td align="center">&nbsp;</td>
                         <td align="center">&nbsp;</td>
@@ -37,7 +37,7 @@ export default function SessionStorageData({data, download,defaultData}){
             <div className="sessionStorage">
                 <table>
                     <caption>
-                        <h3>Local Record</h3>
+                        <h3>本地记录</h3>
                     </caption>
                     <colgroup>
                         <col className="column1" />
@@ -45,10 +45,10 @@ export default function SessionStorageData({data, download,defaultData}){
                     </colgroup>
                     <thead>
                         <tr>
-                            <th align="left">Date</th>
-                            <th align="center">Name</th>
-                            <th align="center">Number</th>
-                            <th align="right">Options</th>
+                            <th align="left">创建时间</th>
+                            <th align="center">文件名</th>
+                            <th align="center">创建数量</th>
+                            <th align="right"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -59,7 +59,7 @@ export default function SessionStorageData({data, download,defaultData}){
                                 <td align="center">{row.data.length}</td>
                                 <td align="right">
                                     <button onClick={()=>{handleDownHistory(row)}}>
-                                        Download
+                                        下载
                                     </button>
                                 </td>
                             </tr>

@@ -1,0 +1,81 @@
+*{
+  box-sizing: border-box;
+  text-align: left;
+}
+html,body{
+  height:100%;
+  width:100%;
+}
+button{
+  cursor: pointer;
+}
+html body {
+  font-family:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:#333;
+  max-width:1140px;
+  margin:0 auto;
+  line-height:1.5;
+}
+#app {
+  width:100%;
+  overflow-x: hidden;
+  min-height:100vh;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.flex{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-row{
+  flex-direction: row!important;
+}
+.justify-center{
+  justify-content: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.copyBtn,.qrcodeBtn {
+  cursor: pointer;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+*{
+  margin:0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+ul,li,dl,dt,ol{
+  list-style: none;
+}

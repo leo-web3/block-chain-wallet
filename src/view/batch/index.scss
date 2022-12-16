@@ -1,0 +1,144 @@
+.batch {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+  }
+  .title{
+    font-weight: normal;
+    font-size:36px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+      word-break: break-all;
+      text-align: center;
+    }
+    span{
+      font-size: 14px;
+      margin-left:auto;
+      flex-shrink: 0;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+  .title-author{
+    color:#333;
+    font-size:14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    img{
+      border-radius:50%;
+      display: block;
+      width:30px;
+    }
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .itemBox{
+    margin: 20px 0 20px;
+  }
+  .itemBox_title{
+    display: flex;
+    margin: 20px 0 10px;
+  }
+  .itemBox_title .label{
+    margin:0 auto 0 0;
+  }
+  .itemBox_title span{
+    margin-left:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .label{
+    margin: 20px 0 10px;
+  }
+  .label span{
+    font-size:14px;
+  }
+  .CountInput{
+    margin:10px 0 20px 0;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.08);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.08);
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  }
+  .createButton{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    font-size:14px;
+    display: block;
+    cursor: pointer;
+  }
+  .Identity{
+    margin: 20px 0;
+  }
+  dl{
+    max-height:500px;
+    overflow: auto;
+  }
+  dt{
+
+  }
+  dd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  dd button{
+    /* height: 30px; */
+    padding:4px 20px;
+  }
+  .createWallet-tabs {
+    display: flex;
+    justify-content: space-between;
+    li {
+      width:50%;
+      text-align: center;
+      a {
+        color: #000;
+        &.active {
+          color: blue;
+        }
+      }
+    }
+  }
+}
