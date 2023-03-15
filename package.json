@@ -1,7 +1,7 @@
 {
   "name": "block-chain-wallet",
   "version": "1.0.0",
-  "homepage": "https://leo-icp.github.io/block-chain-wallet/",
+  "homepage": "./",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
